@@ -1,26 +1,25 @@
 package com.din.calculator;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class Skier {
 
-    private String level;
+    private String skillLevel;
     private String ageRange;
     private String weightRange;
     private String heightRange;
     private String shoeSizeRange;
 
-    public Skier(String level, String ageRange, String weightRange, String heightRange, String shoeSizeRange) {
-        this.level = level;
+    DinTable dinTable;
+
+    public Skier(String skillLevel, String ageRange, String weightRange, String heightRange, String shoeSizeRange) {
+        this.skillLevel = skillLevel;
         this.ageRange = ageRange;
         this.weightRange = weightRange;
         this.heightRange = heightRange;
         this.shoeSizeRange = shoeSizeRange;
     }
 
-    public String getLevel() {
-        return level;
+    public String getSkillLevel() {
+        return skillLevel;
     }
 
     public String getAgeRange() {
@@ -39,7 +38,7 @@ public class Skier {
         return shoeSizeRange;
     }
 
-    public int setWeightRange (String weightRange) {
+    public int checkWeightRange(String weightRange) {
         switch (weightRange) {
             case "A": {return 1;}
             case "B": {return 2;}
@@ -58,7 +57,7 @@ public class Skier {
         return 0;
     }
 
-    public int setHeightRange (String heightRange) {
+    public int checkHeightRange(String heightRange) {
         switch (heightRange) {
             case "H": {return 8;}
             case "I": {return 9;}
@@ -70,11 +69,11 @@ public class Skier {
         return 0;
     }
 
-    public int setSkierCode() {
-        return (Math.min(setWeightRange(getWeightRange()), setHeightRange(getHeightRange())));
+    public int calculateSkierCode() {
+        return (Math.min(checkWeightRange(getWeightRange()), checkHeightRange(getHeightRange())));
     }
 
-    public int setSkillLevel(String skillLevel) {
+    public int checkSkillLevel(String skillLevel) {
         switch (skillLevel) {
             case "BEGINNER": {return 0;}
             case "INTERMEDIATE": {return 1;}
@@ -83,27 +82,24 @@ public class Skier {
         return 0;
     }
 
-    public int setAgeRange(String ageRange) {
+    public int checkAgeRange(String ageRange) {
         switch (ageRange) {
-            case "UP TO 10": {return -1;}
-            case "BETWEEN 11 - 50": {return 0;}
+            case "YOUNGER THAN 10": {return -1;}
+            case "BETWEEN 11 AND 50": {return 0;}
             case "OLDER THAN 50": {return -1;}
         }
         return 0;
     }
 
-    public int countResult() {
-        int result = setSkierCode() + setSkillLevel(getLevel()) + setAgeRange(getAgeRange());
-        if (result < 1) {
-            result = 1;
+    public int calculateSkierCodeIncludingSkillLevelAndAge() {
+        int skierCode = calculateSkierCode() + checkSkillLevel(getSkillLevel()) + checkAgeRange(getAgeRange());
+        if (skierCode < 1) {
+            skierCode = 1;
         }
-        return result;
+        return skierCode;
     }
 
-    public double calculateDin() {
-        Map<Tuple, Double> dinTable = new HashMap<>();
-        dinTable.put(new Tuple(1, "<=230"), 0.75);
-
-        return dinTable.get(new Tuple(countResult(), getShoeSizeRange()));
+    public double getDin() {
+        return dinTable.calculateDin();
     }
 }
