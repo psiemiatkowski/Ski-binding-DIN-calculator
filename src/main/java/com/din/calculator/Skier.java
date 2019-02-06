@@ -1,5 +1,7 @@
 package com.din.calculator;
 
+import java.util.Map;
+
 public class Skier {
 
     private String skillLevel;
@@ -8,7 +10,7 @@ public class Skier {
     private String heightRange;
     private String shoeSizeRange;
 
-    DinTable dinTable;
+    DinTable dinTable = new DinTable();
 
     public Skier(String skillLevel, String ageRange, String weightRange, String heightRange, String shoeSizeRange) {
         this.skillLevel = skillLevel;
@@ -99,7 +101,8 @@ public class Skier {
         return skierCode;
     }
 
-    public double getDin() {
-        return dinTable.calculateDin();
+    public double calculateDin() {
+        Map<Tuple, Double> din = dinTable.getDinTable();
+        return din.get(new Tuple(calculateSkierCodeIncludingSkillLevelAndAge(), getShoeSizeRange()));
     }
 }

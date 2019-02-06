@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class DinTable {
 
-    Skier skier;
+    private Map<Tuple, Double> dinTable = new HashMap<>();
 
     static final String UP_TO_230 = "UP TO 230";
     static final String FROM_231_TO_250 = "FROM 231 TO 250";
@@ -17,8 +17,7 @@ public class DinTable {
     static final String FROM_331_TO_350 = "FROM 331 TO 350";
     static final String ABOVE_351 = "ABOVE 351";
 
-    public double calculateDin() {
-        Map<Tuple, Double> dinTable = new HashMap<>();
+    public Map<Tuple, Double> getDinTable() {
         dinTable.put(new Tuple(1, UP_TO_230), 0.75);
         dinTable.put(new Tuple(2, UP_TO_230), 1.00);
         dinTable.put(new Tuple(3, UP_TO_230), 1.50);
@@ -101,6 +100,6 @@ public class DinTable {
         dinTable.put(new Tuple(15, ABOVE_351), 9.00);
         dinTable.put(new Tuple(16, ABOVE_351), 10.50);
 
-        return dinTable.get(new Tuple(skier.calculateSkierCodeIncludingSkillLevelAndAge(), skier.getShoeSizeRange()));
+        return dinTable;
     }
 }

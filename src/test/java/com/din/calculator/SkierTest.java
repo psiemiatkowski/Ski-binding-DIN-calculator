@@ -22,7 +22,7 @@ public class SkierTest {
         //Given
         Skier skier = new Skier(BEGINNER, YOUNGER_THAN_10, "A", "H", UP_TO_230);
         //When
-        double dinResult = skier.getDin();
+        double dinResult = skier.calculateDin();
         System.out.println(dinResult);
         //Then
         Assert.assertEquals(dinResult, 0.75, 0);
