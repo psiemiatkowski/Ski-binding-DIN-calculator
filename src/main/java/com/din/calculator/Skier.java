@@ -103,6 +103,11 @@ public class Skier {
 
     public double calculateDin() {
         Map<Tuple, Double> din = dinTable.getDinTable();
-        return din.get(new Tuple(calculateSkierCodeIncludingSkillLevelAndAge(), getShoeSizeRange()));
+        try {
+           return din.get(new Tuple(calculateSkierCodeIncludingSkillLevelAndAge(), getShoeSizeRange()));
+        } catch (NullPointerException e) {
+            System.out.println("Result beyond the DIN table. Check selected parameters.");
+        }
+        return 0.00;
     }
 }

@@ -3,9 +3,7 @@ package com.din.calculator;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static com.din.calculator.DinTable.FROM_271_TO_290;
-import static com.din.calculator.DinTable.FROM_331_TO_350;
-import static com.din.calculator.DinTable.UP_TO_230;
+import static com.din.calculator.DinTable.*;
 
 public class SkierTest {
 
@@ -16,16 +14,24 @@ public class SkierTest {
     static final String BETWEEN_11_AND_50 = "BETWEEN 11 AND 50";
     static final String OLDER_THAN_50 = "OLDER THAN 50";
 
-
     @Test
     public void shouldCalculateDin() {
         //Given
-        Skier skier = new Skier(BEGINNER, YOUNGER_THAN_10, "A", "H", UP_TO_230);
+        Skier skier = new Skier(BEGINNER, YOUNGER_THAN_10, "A", "H", FROM_231_TO_250);
         //When
         double dinResult = skier.calculateDin();
-        System.out.println(dinResult);
         //Then
         Assert.assertEquals(dinResult, 0.75, 0);
+    }
+
+    @Test
+    public void shouldReturn0WhenResultIsNull() {
+        //Given
+        Skier skier = new Skier(BEGINNER, YOUNGER_THAN_10, "A", "H", FROM_331_TO_350);
+        //When
+        double dinResult = skier.calculateDin();
+        //Then
+        Assert.assertEquals(dinResult, 0, 0);
     }
 
     @Test
