@@ -10,7 +10,7 @@ public class Skier {
     private String heightRange;
     private String shoeSizeRange;
 
-    DinTable dinTable = new DinTable();
+    private DinTable dinTable = new DinTable();
 
     public Skier(String skillLevel, String ageRange, String weightRange, String heightRange, String shoeSizeRange) {
         this.skillLevel = skillLevel;
@@ -42,33 +42,33 @@ public class Skier {
 
     public int checkWeightRange(String weightRange) {
         switch (weightRange) {
-            case "A": {return 1;}
-            case "B": {return 2;}
-            case "C": {return 3;}
-            case "D": {return 4;}
-            case "E": {return 5;}
-            case "F": {return 6;}
-            case "G": {return 7;}
-            case "H": {return 8;}
-            case "I": {return 9;}
-            case "J": {return 10;}
-            case "K": {return 11;}
-            case "L": {return 12;}
-            case "M": {return 13;}
+            case "FROM 10 TO 13": {return 1;}
+            case "FROM 14 TO 17": {return 2;}
+            case "FROM 18 TO 21": {return 3;}
+            case "FROM 22 TO 25": {return 4;}
+            case "FROM 26 TO 30": {return 5;}
+            case "FROM 31 TO 35": {return 6;}
+            case "FROM 36 TO 41": {return 7;}
+            case "FROM 42 TO 48": {return 8;}
+            case "FROM 49 TO 57": {return 9;}
+            case "FROM 58 TO 66": {return 10;}
+            case "FROM 67 TO 78": {return 11;}
+            case "FROM 79 TO 94": {return 12;}
+            case "ABOVE 95": {return 13;}
         }
-        return 0;
+        return 100;
     }
 
     public int checkHeightRange(String heightRange) {
         switch (heightRange) {
-            case "H": {return 8;}
-            case "I": {return 9;}
-            case "J": {return 10;}
-            case "K": {return 11;}
-            case "L": {return 12;}
-            case "M": {return 13;}
+            case "UP TO 148": {return 8;}
+            case "FROM 149 TO 157": {return 9;}
+            case "FROM 158 TO 166": {return 10;}
+            case "FROM 167 TO 178": {return 11;}
+            case "FROM 179 TO 194": {return 12;}
+            case "ABOVE 195": {return 13;}
         }
-        return 0;
+        return 100;
     }
 
     public int calculateSkierCode() {
@@ -108,6 +108,6 @@ public class Skier {
         } catch (NullPointerException e) {
             System.out.println("Result beyond the DIN table. Check selected parameters.");
         }
-        return 0.00;
+        return 0.0;
     }
 }
