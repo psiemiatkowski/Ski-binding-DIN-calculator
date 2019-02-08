@@ -81,7 +81,7 @@ public class Skier {
             case "INTERMEDIATE": {return 1;}
             case "ADVANCED": {return 2;}
         }
-        return 0;
+        return 100;
     }
 
     public int checkAgeRange(String ageRange) {
@@ -90,7 +90,7 @@ public class Skier {
             case "BETWEEN 11 AND 50": {return 0;}
             case "OLDER THAN 50": {return -1;}
         }
-        return 0;
+        return 100;
     }
 
     public int calculateSkierCodeIncludingSkillLevelAndAge() {

@@ -37,13 +37,62 @@ public class SkierTest {
     static final String H_ABOVE_195 = "ABOVE 195";
 
     @Test
+    public void shouldReturnCorrectWeightRange() {
+        //Given
+        Skier skier1 = new Skier(BEGINNER, YOUNGER_THAN_10, W_FROM_10_TO_13, H_UP_TO_148, S_UP_TO_230);
+        Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_167_TO_178, S_FROM_331_TO_350);
+        Skier skier3 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_ABOVE_95, H_ABOVE_195, S_FROM_331_TO_350);
+        //When
+        int weightRange1 = skier1.checkWeightRange(skier1.getWeightRange());
+        int weightRange2 = skier2.checkWeightRange(skier2.getWeightRange());
+        int weightRange3 = skier3.checkWeightRange(skier3.getWeightRange());
+        //Then
+        Assert.assertEquals(weightRange1, 1);
+        Assert.assertEquals(weightRange2, 10);
+        Assert.assertEquals(weightRange3, 13);
+    }
+
+    @Test
+    public void shouldReturnCorrectHeightRange() {
+        //Given
+        Skier skier1 = new Skier(BEGINNER, YOUNGER_THAN_10, W_FROM_10_TO_13, H_UP_TO_148, S_UP_TO_230);
+        Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_167_TO_178, S_FROM_331_TO_350);
+        Skier skier3 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_ABOVE_95, H_ABOVE_195, S_FROM_331_TO_350);
+        //When
+        int heightRange1 = skier1.checkHeightRange(skier1.getHeightRange());
+        int heightRange2 = skier2.checkHeightRange(skier2.getHeightRange());
+        int heightRange3 = skier3.checkHeightRange(skier3.getHeightRange());
+        //Then
+        Assert.assertEquals(heightRange1, 8);
+        Assert.assertEquals(heightRange2, 11);
+        Assert.assertEquals(heightRange3, 13);
+    }
+
+    @Test
+    public void shouldCalculateSkierCode() {
+        //Given
+        Skier skier1 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_FROM_14_TO_17, H_UP_TO_148, S_FROM_331_TO_350);
+        Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_149_TO_157, S_FROM_231_TO_250);
+        //When
+        int skierCode1 = skier1.calculateSkierCode();
+        int skierCode2 = skier2.calculateSkierCode();
+        //Then
+        Assert.assertEquals(skierCode1, 2);
+        Assert.assertEquals(skierCode2, 9);
+    }
+
+    @Test
     public void shouldCalculateDin() {
         //Given
-        Skier skier = new Skier(BEGINNER, YOUNGER_THAN_10, W_FROM_10_TO_13, H_UP_TO_148, S_FROM_231_TO_250);
+        Skier skier1 = new Skier(BEGINNER, YOUNGER_THAN_10, W_FROM_10_TO_13, H_UP_TO_148, S_UP_TO_230);
+        Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_149_TO_157, S_FROM_231_TO_250);
+        Skier skier3 = new Skier(BEGINNER, YOUNGER_THAN_10, W_FROM_10_TO_13, H_UP_TO_148, S_FROM_231_TO_250);
         //When
-        double dinResult = skier.calculateDin();
+        double dinResult1 = skier1.calculateDin();
+        double dinResult2 = skier2.calculateDin();
         //Then
-        Assert.assertEquals(dinResult, 0.75, 0);
+        Assert.assertEquals(dinResult1, 0.75, 0);
+        Assert.assertEquals(dinResult2, 0.75, 0);
     }
 
     @Test
@@ -59,21 +108,7 @@ public class SkierTest {
         Assert.assertEquals(dinResult2, 0, 0);
     }
 
-    @Test
-    public void shouldGetWeightRange() {
-        //Given
-        Skier skier1 = new Skier(BEGINNER, YOUNGER_THAN_10, W_FROM_10_TO_13, H_UP_TO_148, S_UP_TO_230);
-        Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_167_TO_178, S_FROM_331_TO_350);
-        Skier skier3 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_ABOVE_95, H_ABOVE_195, S_FROM_331_TO_350);
-        //When
-        int weightRange1 = skier1.checkWeightRange(skier1.getWeightRange());
-        int weightRange2 = skier2.checkWeightRange(skier2.getWeightRange());
-        int weightRange3 = skier3.checkWeightRange(skier3.getWeightRange());
-        //Then
-        Assert.assertEquals(weightRange1, 1);
-        Assert.assertEquals(weightRange2, 10);
-        Assert.assertEquals(weightRange3, 13);
-    }
+
 
     @Test
     public void shouldCalculateSkierCodeIncludingSkillLevelAndAge() {
