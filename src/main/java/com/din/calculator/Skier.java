@@ -108,6 +108,6 @@ public class Skier {
         } catch (NullPointerException e) {
             System.out.println("Result beyond the DIN table. Check selected parameters.");
         }
-        return 0.0;
+        return 0;
     }
 }

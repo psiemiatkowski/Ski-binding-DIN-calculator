@@ -71,28 +71,37 @@ public class SkierTest {
     @Test
     public void shouldCalculateSkierCode() {
         //Given
-        Skier skier1 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_FROM_14_TO_17, H_UP_TO_148, S_FROM_331_TO_350);
-        Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_149_TO_157, S_FROM_231_TO_250);
+        Skier skier1 = new Skier(INTERMEDIATE, BETWEEN_11_AND_50, W_FROM_18_TO_21, H_UP_TO_148, S_FROM_231_TO_250);
+        Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_149_TO_157, S_FROM_251_TO_270);
+        Skier skier3 = new Skier(BEGINNER, OLDER_THAN_50, W_ABOVE_95, H_ABOVE_195, S_ABOVE_351);
+        Skier skier4 = new Skier(INTERMEDIATE, YOUNGER_THAN_10, W_FROM_10_TO_13, H_UP_TO_148, S_UP_TO_230);
         //When
         int skierCode1 = skier1.calculateSkierCode();
         int skierCode2 = skier2.calculateSkierCode();
+        int skierCode3 = skier3.calculateSkierCode();
+        int skierCode4 = skier4.calculateSkierCode();
         //Then
-        Assert.assertEquals(skierCode1, 2);
+        Assert.assertEquals(skierCode1, 3);
         Assert.assertEquals(skierCode2, 9);
+        Assert.assertEquals(skierCode3, 13);
+        Assert.assertEquals(skierCode4, 1);
+
     }
 
     @Test
     public void shouldCalculateDin() {
         //Given
         Skier skier1 = new Skier(BEGINNER, YOUNGER_THAN_10, W_FROM_10_TO_13, H_UP_TO_148, S_UP_TO_230);
-        Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_149_TO_157, S_FROM_231_TO_250);
-        Skier skier3 = new Skier(BEGINNER, YOUNGER_THAN_10, W_FROM_10_TO_13, H_UP_TO_148, S_FROM_231_TO_250);
+        Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_149_TO_157, S_FROM_251_TO_270);
+        Skier skier3 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_FROM_79_TO_94, H_FROM_179_TO_194, S_FROM_271_TO_290);
         //When
         double dinResult1 = skier1.calculateDin();
         double dinResult2 = skier2.calculateDin();
+        double dinResult3 = skier3.calculateDin();
         //Then
         Assert.assertEquals(dinResult1, 0.75, 0);
-        Assert.assertEquals(dinResult2, 0.75, 0);
+        Assert.assertEquals(dinResult2, 6.5, 0);
+        Assert.assertEquals(dinResult3, 7, 0);
     }
 
     @Test
