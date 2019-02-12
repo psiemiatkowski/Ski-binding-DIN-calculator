@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="32f18ebb-fd6d-449f-aef2-a4e6251f4d3a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/din/calculator/Skier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/din/calculator/Skier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/din/calculator/SkierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/din/calculator/SkierTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,22 +23,23 @@
     <session id="490306848">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.7" value="3" />
-          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2218" />
+          <entry key="java" value="2409" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2218" />
+          <entry key="JAVA" value="2409" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -64,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/Skier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="954">
-              <caret line="92" column="19" lean-forward="true" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
+            <state relative-caret-position="388">
+              <caret line="100" column="25" lean-forward="true" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -74,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/din/calculator/SkierTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="460">
-              <caret line="80" column="53" lean-forward="true" selection-start-line="80" selection-start-column="53" selection-end-line="80" selection-end-column="53" />
+              <caret line="134" column="103" lean-forward="true" selection-start-line="134" selection-start-column="103" selection-end-line="134" selection-end-column="103" />
             </state>
           </provider>
         </entry>
@@ -83,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/DinTable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1782">
-              <caret line="99" column="55" lean-forward="true" selection-start-line="99" selection-start-column="55" selection-end-line="99" selection-end-column="55" />
+              <caret line="99" column="55" selection-start-line="99" selection-start-column="55" selection-end-line="99" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -441,6 +441,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -500,13 +501,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549886907167" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549978483253" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -538,25 +538,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SkierTest.shouldCalculateSkierCode">
+  <component name="RunManager" selected="JUnit.SkierTest.shouldCalculateSkierCodeIncludingSkillLevelAndAge">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SkierTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Ski-binding-DIN-calculator_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.din.calculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.din.calculator" />
-      <option name="MAIN_CLASS_NAME" value="com.din.calculator.SkierTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -597,7 +581,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SkierTest.shouldReturnCorrectHeightRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SkierTest.shouldCalculateSkierCodeIncludingSkillLevelAndAge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Ski-binding-DIN-calculator_test" />
       <extension name="coverage">
         <pattern>
@@ -607,7 +591,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.din.calculator" />
       <option name="MAIN_CLASS_NAME" value="com.din.calculator.SkierTest" />
-      <option name="METHOD_NAME" value="shouldReturnCorrectHeightRange" />
+      <option name="METHOD_NAME" value="shouldCalculateSkierCodeIncludingSkillLevelAndAge" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -615,7 +599,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SkierTest.shouldReturnCorrectWeightRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SkierTest.shouldReturnCorrectAgeRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Ski-binding-DIN-calculator_test" />
       <extension name="coverage">
         <pattern>
@@ -625,7 +609,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.din.calculator" />
       <option name="MAIN_CLASS_NAME" value="com.din.calculator.SkierTest" />
-      <option name="METHOD_NAME" value="shouldReturnCorrectWeightRange" />
+      <option name="METHOD_NAME" value="shouldReturnCorrectAgeRange" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SkierTest.shouldReturnCorrectSkillLevel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ski-binding-DIN-calculator_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.din.calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.din.calculator" />
+      <option name="MAIN_CLASS_NAME" value="com.din.calculator.SkierTest" />
+      <option name="METHOD_NAME" value="shouldReturnCorrectSkillLevel" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -650,19 +652,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SkierTest.shouldReturnCorrectWeightRange" />
-      <item itemvalue="JUnit.SkierTest.shouldReturnCorrectHeightRange" />
       <item itemvalue="JUnit.SkierTest.shouldCalculateSkierCode" />
       <item itemvalue="JUnit.SkierTest.shouldCalculateDin" />
-      <item itemvalue="JUnit.SkierTest" />
+      <item itemvalue="JUnit.SkierTest.shouldReturnCorrectSkillLevel" />
+      <item itemvalue="JUnit.SkierTest.shouldReturnCorrectAgeRange" />
+      <item itemvalue="JUnit.SkierTest.shouldCalculateSkierCodeIncludingSkillLevelAndAge" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SkierTest.shouldCalculateSkierCodeIncludingSkillLevelAndAge" />
+        <item itemvalue="JUnit.SkierTest.shouldReturnCorrectAgeRange" />
+        <item itemvalue="JUnit.SkierTest.shouldReturnCorrectSkillLevel" />
         <item itemvalue="JUnit.SkierTest.shouldCalculateSkierCode" />
         <item itemvalue="JUnit.SkierTest.shouldCalculateDin" />
-        <item itemvalue="JUnit.SkierTest" />
-        <item itemvalue="JUnit.SkierTest.shouldReturnCorrectHeightRange" />
-        <item itemvalue="JUnit.SkierTest.shouldReturnCorrectWeightRange" />
       </list>
     </recent_temporary>
   </component>
@@ -686,32 +688,13 @@
       <workItem from="1549519726489" duration="9805000" />
       <workItem from="1549605718184" duration="599000" />
       <workItem from="1549628714362" duration="2174000" />
-      <workItem from="1549864616512" duration="2470000" />
+      <workItem from="1549864616512" duration="3250000" />
+      <workItem from="1549893305502" duration="50000" />
+      <workItem from="1549959661942" duration="4070000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SkierTest_shouldCalculateDin - 2019.02.11 at 12h 55m 15s.xml">
-      <configuration name="SkierTest.shouldCalculateDin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SkierTest_shouldCalculateDin - 2019.02.11 at 12h 55m 44s.xml">
-      <configuration name="SkierTest.shouldCalculateDin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SkierTest_shouldCalculateSkierCode - 2019.02.11 at 12h 58m 56s.xml">
-      <configuration name="SkierTest.shouldCalculateSkierCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SkierTest_shouldCalculateSkierCode - 2019.02.11 at 12h 59m 40s.xml">
-      <configuration name="SkierTest.shouldCalculateSkierCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SkierTest_shouldCalculateSkierCode - 2019.02.11 at 13h 00m 00s.xml">
-      <configuration name="SkierTest.shouldCalculateSkierCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SkierTest_shouldCalculateSkierCode - 2019.02.11 at 13h 00m 30s.xml">
-      <configuration name="SkierTest.shouldCalculateSkierCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SkierTest_shouldCalculateSkierCode - 2019.02.11 at 13h 02m 05s.xml">
-      <configuration name="SkierTest.shouldCalculateSkierCode" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SkierTest_shouldCalculateSkierCode - 2019.02.11 at 13h 04m 28s.xml">
       <configuration name="SkierTest.shouldCalculateSkierCode" configurationId="JUnit" />
     </history-entry>
@@ -721,15 +704,36 @@
     <history-entry file="SkierTest_shouldCalculateSkierCode - 2019.02.11 at 13h 05m 59s.xml">
       <configuration name="SkierTest.shouldCalculateSkierCode" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SkierTest_shouldCalculateSkierCode - 2019.02.11 at 13h 08m 29s.xml">
+      <configuration name="SkierTest.shouldCalculateSkierCode" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SkierTest_shouldCalculateSkierCode - 2019.02.11 at 13h 08m 57s.xml">
+      <configuration name="SkierTest.shouldCalculateSkierCode" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SkierTest_shouldReturnCorrectSkillLevel - 2019.02.12 at 12h 04m 46s.xml">
+      <configuration name="SkierTest.shouldReturnCorrectSkillLevel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SkierTest_shouldReturnCorrectSkillLevel - 2019.02.12 at 12h 04m 57s.xml">
+      <configuration name="SkierTest.shouldReturnCorrectSkillLevel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SkierTest_shouldReturnCorrectSkillLevel - 2019.02.12 at 12h 10m 15s.xml">
+      <configuration name="SkierTest.shouldReturnCorrectSkillLevel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SkierTest_shouldReturnCorrectAgeRange - 2019.02.12 at 14h 33m 50s.xml">
+      <configuration name="SkierTest.shouldReturnCorrectAgeRange" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SkierTest_shouldReturnCorrectAgeRange - 2019.02.12 at 14h 34m 45s.xml">
+      <configuration name="SkierTest.shouldReturnCorrectAgeRange" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50878000" />
+    <option name="totallyTimeSpent" value="55778000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27132195" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2771855" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -781,6 +785,16 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/test.jpg" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/cropped-1920-1080-990113.png" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/tabela_sily_wypiecia_wiazan_narciarskich.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/DinTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="99" column="55" selection-start-line="99" selection-start-column="55" selection-end-line="99" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/DIN_table.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/info.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -788,27 +802,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/DIN_table.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/DinTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1782">
-          <caret line="99" column="55" lean-forward="true" selection-start-line="99" selection-start-column="55" selection-end-line="99" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/Skier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="92" column="19" lean-forward="true" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
+        <state relative-caret-position="388">
+          <caret line="100" column="25" lean-forward="true" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/din/calculator/SkierTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
-          <caret line="80" column="53" lean-forward="true" selection-start-line="80" selection-start-column="53" selection-end-line="80" selection-end-column="53" />
+          <caret line="134" column="103" lean-forward="true" selection-start-line="134" selection-start-column="103" selection-end-line="134" selection-end-column="103" />
         </state>
       </provider>
     </entry>

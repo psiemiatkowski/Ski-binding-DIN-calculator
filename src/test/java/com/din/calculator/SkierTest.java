@@ -85,7 +85,60 @@ public class SkierTest {
         Assert.assertEquals(skierCode2, 9);
         Assert.assertEquals(skierCode3, 13);
         Assert.assertEquals(skierCode4, 1);
+    }
 
+    @Test
+    public void shouldReturnCorrectSkillLevel() {
+        //Given
+        Skier skier1 = new Skier(INTERMEDIATE, BETWEEN_11_AND_50, W_FROM_18_TO_21, H_UP_TO_148, S_FROM_231_TO_250);
+        Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_149_TO_157, S_FROM_251_TO_270);
+        Skier skier3 = new Skier(BEGINNER, OLDER_THAN_50, W_ABOVE_95, H_ABOVE_195, S_ABOVE_351);
+        //When
+        int skierSkillLevel1 = skier1.checkSkillLevel(skier1.getSkillLevel());
+        int skierSkillLevel2 = skier1.checkSkillLevel(skier2.getSkillLevel());
+        int skierSkillLevel3 = skier1.checkSkillLevel(skier3.getSkillLevel());
+        //Then
+        Assert.assertEquals(skierSkillLevel1, 1);
+        Assert.assertEquals(skierSkillLevel2, 2);
+        Assert.assertEquals(skierSkillLevel3, 0);
+    }
+
+    @Test
+    public void shouldReturnCorrectAgeRange() {
+        //Given
+        Skier skier1 = new Skier(BEGINNER, YOUNGER_THAN_10, W_FROM_10_TO_13, H_UP_TO_148, S_UP_TO_230);
+        Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_149_TO_157, S_FROM_251_TO_270);
+        Skier skier3 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_FROM_79_TO_94, H_FROM_179_TO_194, S_FROM_271_TO_290);
+        //When
+        int skierAgeRange1 = skier1.checkAgeRange(skier1.getAgeRange());
+        int skierAgeRange2 = skier2.checkAgeRange(skier2.getAgeRange());
+        int skierAgeRange3 = skier3.checkAgeRange(skier3.getAgeRange());
+        //Then
+        Assert.assertEquals(skierAgeRange1, -1);
+        Assert.assertEquals(skierAgeRange2, 0);
+        Assert.assertEquals(skierAgeRange3, -1);
+    }
+
+    @Test
+    public void shouldCalculateSkierCodeIncludingSkillLevelAndAge() {
+        //Given
+        Skier skier1 = new Skier(INTERMEDIATE, BETWEEN_11_AND_50, W_FROM_79_TO_94, H_FROM_179_TO_194, S_FROM_271_TO_290);
+        Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_167_TO_178, S_FROM_331_TO_350);
+        Skier skier3 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_ABOVE_95, H_ABOVE_195, S_FROM_331_TO_350);
+        Skier skier4 = new Skier(BEGINNER, OLDER_THAN_50, W_ABOVE_95, H_ABOVE_195, S_FROM_331_TO_350);
+        Skier skier5 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_ABOVE_95, H_ABOVE_195, S_FROM_331_TO_350);
+        //When
+        int skierCodeIncludingSkillLevelAndAge1 = skier1.calculateSkierCodeIncludingSkillLevelAndAge();
+        int skierCodeIncludingSkillLevelAndAge2 = skier2.calculateSkierCodeIncludingSkillLevelAndAge();
+        int skierCodeIncludingSkillLevelAndAge3 = skier3.calculateSkierCodeIncludingSkillLevelAndAge();
+        int skierCodeIncludingSkillLevelAndAge4 = skier4.calculateSkierCodeIncludingSkillLevelAndAge();
+        int skierCodeIncludingSkillLevelAndAge5 = skier5.calculateSkierCodeIncludingSkillLevelAndAge();
+        //Than
+        Assert.assertEquals(skierCodeIncludingSkillLevelAndAge1, 13);
+        Assert.assertEquals(skierCodeIncludingSkillLevelAndAge2, 13);
+        Assert.assertEquals(skierCodeIncludingSkillLevelAndAge3, 13);
+        Assert.assertEquals(skierCodeIncludingSkillLevelAndAge4, 13);
+        Assert.assertEquals(skierCodeIncludingSkillLevelAndAge5, 13);
     }
 
     @Test
@@ -119,14 +172,6 @@ public class SkierTest {
 
 
 
-    @Test
-    public void shouldCalculateSkierCodeIncludingSkillLevelAndAge() {
-        //Given
-        Skier skier1 = new Skier(INTERMEDIATE, BETWEEN_11_AND_50, W_FROM_79_TO_94, H_FROM_179_TO_194, S_FROM_271_TO_290);
-        //When
-        int skier1Code = skier1.calculateSkierCodeIncludingSkillLevelAndAge();
-        //Than
-        Assert.assertEquals(skier1Code, 13);
-    }
+
 
 }
