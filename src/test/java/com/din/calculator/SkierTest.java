@@ -3,38 +3,9 @@ package com.din.calculator;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static com.din.calculator.DinTable.*;
+import static com.din.calculator.Constance.*;
 
 public class SkierTest {
-
-    static final String BEGINNER = "BEGINNER";
-    static final String INTERMEDIATE = "INTERMEDIATE";
-    static final String ADVANCED = "ADVANCED";
-
-    static final String YOUNGER_THAN_10 = "YOUNGER THAN 10";
-    static final String BETWEEN_11_AND_50 = "BETWEEN 11 AND 50";
-    static final String OLDER_THAN_50 = "OLDER THAN 50";
-
-    static final String W_FROM_10_TO_13 = "FROM 10 TO 13";
-    static final String W_FROM_14_TO_17 = "FROM 14 TO 17";
-    static final String W_FROM_18_TO_21 = "FROM 18 TO 21";
-    static final String W_FROM_22_TO_25 = "FROM 22 TO 25";
-    static final String W_FROM_26_TO_30 = "FROM 26 TO 30";
-    static final String W_FROM_31_TO_35 = "FROM 31 TO 35";
-    static final String W_FROM_36_TO_41 = "FROM 36 TO 41";
-    static final String W_FROM_42_TO_48 = "FROM 42 TO 48";
-    static final String W_FROM_49_TO_57 = "FROM 49 TO 57";
-    static final String W_FROM_58_TO_66 = "FROM 58 TO 66";
-    static final String W_FROM_67_TO_78 = "FROM 67 TO 78";
-    static final String W_FROM_79_TO_94 = "FROM 79 TO 94";
-    static final String W_ABOVE_95 = "ABOVE 95";
-
-    static final String H_UP_TO_148 = "UP TO 148";
-    static final String H_FROM_149_TO_157 = "FROM 149 TO 157";
-    static final String H_FROM_158_TO_166 = "FROM 158 TO 166";
-    static final String H_FROM_167_TO_178 = "FROM 167 TO 178";
-    static final String H_FROM_179_TO_194 = "FROM 179 TO 194";
-    static final String H_ABOVE_195 = "ABOVE 195";
 
     @Test
     public void shouldReturnCorrectWeightRange() {
@@ -123,22 +94,25 @@ public class SkierTest {
     public void shouldCalculateSkierCodeIncludingSkillLevelAndAge() {
         //Given
         Skier skier1 = new Skier(INTERMEDIATE, BETWEEN_11_AND_50, W_FROM_79_TO_94, H_FROM_179_TO_194, S_FROM_271_TO_290);
-        Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_167_TO_178, S_FROM_331_TO_350);
-        Skier skier3 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_ABOVE_95, H_ABOVE_195, S_FROM_331_TO_350);
-        Skier skier4 = new Skier(BEGINNER, OLDER_THAN_50, W_ABOVE_95, H_ABOVE_195, S_FROM_331_TO_350);
-        Skier skier5 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_ABOVE_95, H_ABOVE_195, S_FROM_331_TO_350);
+        Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_167_TO_178, S_FROM_251_TO_270);
+        Skier skier3 = new Skier(BEGINNER, OLDER_THAN_50, W_ABOVE_95, H_ABOVE_195, S_FROM_331_TO_350);
+        Skier skier4 = new Skier(BEGINNER, YOUNGER_THAN_10, W_FROM_10_TO_13, H_UP_TO_148, S_UP_TO_230);
+        Skier skier5 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_FROM_67_TO_78, H_FROM_179_TO_194, S_FROM_271_TO_290);
+        Skier skier6 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_26_TO_30, H_UP_TO_148, S_FROM_231_TO_250);
         //When
         int skierCodeIncludingSkillLevelAndAge1 = skier1.calculateSkierCodeIncludingSkillLevelAndAge();
         int skierCodeIncludingSkillLevelAndAge2 = skier2.calculateSkierCodeIncludingSkillLevelAndAge();
         int skierCodeIncludingSkillLevelAndAge3 = skier3.calculateSkierCodeIncludingSkillLevelAndAge();
         int skierCodeIncludingSkillLevelAndAge4 = skier4.calculateSkierCodeIncludingSkillLevelAndAge();
         int skierCodeIncludingSkillLevelAndAge5 = skier5.calculateSkierCodeIncludingSkillLevelAndAge();
+        int skierCodeIncludingSkillLevelAndAge6 = skier6.calculateSkierCodeIncludingSkillLevelAndAge();
         //Than
         Assert.assertEquals(skierCodeIncludingSkillLevelAndAge1, 13);
-        Assert.assertEquals(skierCodeIncludingSkillLevelAndAge2, 13);
-        Assert.assertEquals(skierCodeIncludingSkillLevelAndAge3, 13);
-        Assert.assertEquals(skierCodeIncludingSkillLevelAndAge4, 13);
-        Assert.assertEquals(skierCodeIncludingSkillLevelAndAge5, 13);
+        Assert.assertEquals(skierCodeIncludingSkillLevelAndAge2, 12);
+        Assert.assertEquals(skierCodeIncludingSkillLevelAndAge3, 12);
+        Assert.assertEquals(skierCodeIncludingSkillLevelAndAge4, 1);
+        Assert.assertEquals(skierCodeIncludingSkillLevelAndAge5, 11);
+        Assert.assertEquals(skierCodeIncludingSkillLevelAndAge6, 7);
     }
 
     @Test
@@ -147,31 +121,41 @@ public class SkierTest {
         Skier skier1 = new Skier(BEGINNER, YOUNGER_THAN_10, W_FROM_10_TO_13, H_UP_TO_148, S_UP_TO_230);
         Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_149_TO_157, S_FROM_251_TO_270);
         Skier skier3 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_FROM_79_TO_94, H_FROM_179_TO_194, S_FROM_271_TO_290);
+        Skier skier4 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_42_TO_48, H_FROM_149_TO_157, S_FROM_271_TO_290);
+        Skier skier5 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_ABOVE_95, H_ABOVE_195, S_ABOVE_351);
+        Skier skier6 = new Skier(BEGINNER, BETWEEN_11_AND_50, W_FROM_26_TO_30, H_UP_TO_148, S_FROM_311_TO_330);
         //When
         double dinResult1 = skier1.calculateDin();
         double dinResult2 = skier2.calculateDin();
         double dinResult3 = skier3.calculateDin();
+        double dinResult4 = skier4.calculateDin();
+        double dinResult5 = skier5.calculateDin();
+        double dinResult6 = skier6.calculateDin();
         //Then
         Assert.assertEquals(dinResult1, 0.75, 0);
         Assert.assertEquals(dinResult2, 6.5, 0);
         Assert.assertEquals(dinResult3, 7, 0);
+        Assert.assertEquals(dinResult4, 5, 0);
+        Assert.assertEquals(dinResult5, 6, 0);
+        Assert.assertEquals(dinResult6, 1.5, 0);
     }
 
     @Test
-    public void shouldReturn0WhenResultIsBeyondTable() {
+    public void shouldReturn0WhenDinResultIsBeyondTable() {
         //Given
         Skier skier1 = new Skier(BEGINNER, YOUNGER_THAN_10, W_FROM_14_TO_17, H_FROM_149_TO_157, S_FROM_331_TO_350);
         Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_ABOVE_95, H_ABOVE_195, S_FROM_231_TO_250);
+        Skier skier3 = new Skier(INTERMEDIATE, BETWEEN_11_AND_50, W_FROM_42_TO_48, H_UP_TO_148, S_ABOVE_351);
+        Skier skier4 = new Skier(BEGINNER, OLDER_THAN_50, W_FROM_67_TO_78, H_FROM_179_TO_194, S_FROM_231_TO_250);
         //When
         double dinResult1 = skier1.calculateDin();
         double dinResult2 = skier2.calculateDin();
+        double dinResult3 = skier3.calculateDin();
+        double dinResult4 = skier4.calculateDin();
         //Then
         Assert.assertEquals(dinResult1, 0, 0);
         Assert.assertEquals(dinResult2, 0, 0);
+        Assert.assertEquals(dinResult3, 0, 0);
+        Assert.assertEquals(dinResult4, 0, 0);
     }
-
-
-
-
-
 }

@@ -72,6 +72,9 @@ public class Skier {
     }
 
     public int calculateSkierCode() {
+        if (checkWeightRange(getWeightRange()) > 13 || checkHeightRange(getHeightRange()) > 13) {
+            System.out.println("Incorrect weight or height parameter");
+        }
         return (Math.min(checkWeightRange(getWeightRange()), checkHeightRange(getHeightRange())));
     }
 

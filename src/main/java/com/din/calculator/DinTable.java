@@ -3,19 +3,12 @@ package com.din.calculator;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.din.calculator.Constance.*;
+
 
 public class DinTable {
 
     private Map<Tuple, Double> dinTable = new HashMap<>();
-
-    static final String S_UP_TO_230 = "UP TO 230";
-    static final String S_FROM_231_TO_250 = "FROM 231 TO 250";
-    static final String S_FROM_251_TO_270 = "FROM 251 TO 270";
-    static final String S_FROM_271_TO_290 = "FROM 271 TO 290";
-    static final String S_FROM_291_TO_310 = "FROM 291 TO 310";
-    static final String S_FROM_311_TO_330 = "FROM 311 TO 330";
-    static final String S_FROM_331_TO_350 = "FROM 331 TO 350";
-    static final String S_ABOVE_351 = "ABOVE 351";
 
     public Map<Tuple, Double> getDinTable() {
         dinTable.put(new Tuple(1, S_UP_TO_230), 0.75);
