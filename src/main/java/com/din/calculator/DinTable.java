@@ -3,7 +3,7 @@ package com.din.calculator;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.din.calculator.Consts.*;
+import static com.din.calculator.Constants.*;
 
 
 public class DinTable {

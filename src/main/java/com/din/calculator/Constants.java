@@ -1,6 +1,6 @@
 package com.din.calculator;
 
-final class Consts {
+final class Constants {
 
     public static final String BEGINNER = "BEGINNER";
     public static final String INTERMEDIATE = "INTERMEDIATE";
