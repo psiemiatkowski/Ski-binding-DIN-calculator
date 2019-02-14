@@ -3,7 +3,7 @@ package com.din.calculator;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static com.din.calculator.Constance.*;
+import static com.din.calculator.Consts.*;
 
 public class SkierTest {
 

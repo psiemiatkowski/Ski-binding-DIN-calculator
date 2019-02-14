@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32f18ebb-fd6d-449f-aef2-a4e6251f4d3a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/din/calculator/Constance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/din/calculator/Skier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/din/calculator/Skier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/din/calculator/Constance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/din/calculator/DinTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/din/calculator/DinTable.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/com/din/calculator/SkierTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/din/calculator/SkierTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/din/calculator/DIN_table.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/din/calculator/DIN_table.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/din/calculator/Constance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/din/calculator/Consts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/din/calculator/DinTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/din/calculator/DinTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/din/calculator/Skier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/din/calculator/Skier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/din/calculator/SkierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/din/calculator/SkierTest.java" afterDir="false" />
@@ -34,23 +35,23 @@
     <session id="490306848">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.7" value="4" />
-          <entry key="project.open.time.8" value="4" />
+          <entry key="project.open.time.8" value="5" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2659" />
+          <entry key="java" value="2701" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2659" />
+          <entry key="JAVA" value="2701" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -75,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/Skier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1854">
-              <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
+            <state relative-caret-position="2124">
+              <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
             </state>
           </provider>
         </entry>
@@ -84,17 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/din/calculator/SkierTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/Constance.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="414">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -102,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/DinTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="144">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -111,6 +103,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/DIN_table.jpg">
           <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/Consts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="44" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -428,10 +429,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/din/calculator/Tuple.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/din/calculator/App.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/din/calculator/DinTableTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/din/calculator/Skier.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/din/calculator/Constance.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/din/calculator/DinTable.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/din/calculator/SkierTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/din/calculator/DinTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/din/calculator/Constance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/din/calculator/fdgddggd.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/din/calculator/Consts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/din/calculator/Skier.java" />
       </list>
     </option>
   </component>
@@ -453,8 +456,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -513,12 +514,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550061916563" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550064818510" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -561,7 +564,7 @@
       <module name="Ski-binding-DIN-calculator_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.din.calculator.*" />
+          <option name="PATTERN" value="com.din.calculator.Consts" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -577,7 +580,7 @@
       <module name="Ski-binding-DIN-calculator_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.din.calculator.*" />
+          <option name="PATTERN" value="com.din.calculator.Consts" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -595,7 +598,7 @@
       <module name="Ski-binding-DIN-calculator_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.din.calculator.*" />
+          <option name="PATTERN" value="com.din.calculator.Consts" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -613,7 +616,7 @@
       <module name="Ski-binding-DIN-calculator_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.din.calculator.*" />
+          <option name="PATTERN" value="com.din.calculator.Consts" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -631,7 +634,7 @@
       <module name="Ski-binding-DIN-calculator_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.din.calculator.*" />
+          <option name="PATTERN" value="com.din.calculator.Consts" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -703,20 +706,12 @@
       <workItem from="1549959661942" duration="4302000" />
       <workItem from="1550037494875" duration="696000" />
       <workItem from="1550043734715" duration="5037000" />
-      <workItem from="1550052276793" duration="3433000" />
+      <workItem from="1550052276793" duration="4775000" />
+      <workItem from="1550124044220" duration="1530000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SkierTest - 2019.02.13 at 10h 57m 17s.xml">
-      <configuration name="SkierTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SkierTest - 2019.02.13 at 10h 57m 42s.xml">
-      <configuration name="SkierTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SkierTest_shouldCalculateDin - 2019.02.13 at 11h 17m 43s.xml">
-      <configuration name="SkierTest.shouldCalculateDin" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SkierTest_shouldCalculateDin - 2019.02.13 at 11h 19m 14s.xml">
       <configuration name="SkierTest.shouldCalculateDin" configurationId="JUnit" />
     </history-entry>
@@ -738,15 +733,24 @@
     <history-entry file="SkierTest - 2019.02.13 at 13h 45m 18s.xml">
       <configuration name="SkierTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SkierTest - 2019.02.13 at 14h 13m 20s.xml">
+      <configuration name="SkierTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SkierTest - 2019.02.13 at 14h 33m 22s.xml">
+      <configuration name="SkierTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SkierTest - 2019.02.13 at 14h 33m 40s.xml">
+      <configuration name="SkierTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65176000" />
+    <option name="totallyTimeSpent" value="68048000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2867804" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28997868" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -755,7 +759,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32832617" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22317597" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22317597" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39914164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -806,34 +810,34 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/din/calculator/DinTableTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/DinTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/DIN_table.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/Consts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/Skier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1854">
-          <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/Constance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/din/calculator/DinTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="2124">
+          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/din/calculator/SkierTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        <state relative-caret-position="414">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
         </state>
       </provider>
     </entry>

@@ -2,6 +2,8 @@ package com.din.calculator;
 
 import java.util.Map;
 
+import static com.din.calculator.Consts.*;
+
 public class Skier {
 
     private String skillLevel;
@@ -42,31 +44,31 @@ public class Skier {
 
     public int checkWeightRange(String weightRange) {
         switch (weightRange) {
-            case "FROM 10 TO 13": {return 1;}
-            case "FROM 14 TO 17": {return 2;}
-            case "FROM 18 TO 21": {return 3;}
-            case "FROM 22 TO 25": {return 4;}
-            case "FROM 26 TO 30": {return 5;}
-            case "FROM 31 TO 35": {return 6;}
-            case "FROM 36 TO 41": {return 7;}
-            case "FROM 42 TO 48": {return 8;}
-            case "FROM 49 TO 57": {return 9;}
-            case "FROM 58 TO 66": {return 10;}
-            case "FROM 67 TO 78": {return 11;}
-            case "FROM 79 TO 94": {return 12;}
-            case "ABOVE 95": {return 13;}
+            case W_FROM_10_TO_13: {return 1;}
+            case W_FROM_14_TO_17: {return 2;}
+            case W_FROM_18_TO_21: {return 3;}
+            case W_FROM_22_TO_25: {return 4;}
+            case W_FROM_26_TO_30: {return 5;}
+            case W_FROM_31_TO_35: {return 6;}
+            case W_FROM_36_TO_41: {return 7;}
+            case W_FROM_42_TO_48: {return 8;}
+            case W_FROM_49_TO_57: {return 9;}
+            case W_FROM_58_TO_66: {return 10;}
+            case W_FROM_67_TO_78: {return 11;}
+            case W_FROM_79_TO_94: {return 12;}
+            case W_ABOVE_95: {return 13;}
         }
         return 100;
     }
 
     public int checkHeightRange(String heightRange) {
         switch (heightRange) {
-            case "UP TO 148": {return 8;}
-            case "FROM 149 TO 157": {return 9;}
-            case "FROM 158 TO 166": {return 10;}
-            case "FROM 167 TO 178": {return 11;}
-            case "FROM 179 TO 194": {return 12;}
-            case "ABOVE 195": {return 13;}
+            case H_UP_TO_148: {return 8;}
+            case H_FROM_149_TO_157: {return 9;}
+            case H_FROM_158_TO_166: {return 10;}
+            case H_FROM_167_TO_178: {return 11;}
+            case H_FROM_179_TO_194: {return 12;}
+            case H_ABOVE_195: {return 13;}
         }
         return 100;
     }
@@ -80,18 +82,18 @@ public class Skier {
 
     public int checkSkillLevel(String skillLevel) {
         switch (skillLevel) {
-            case "BEGINNER": {return 0;}
-            case "INTERMEDIATE": {return 1;}
-            case "ADVANCED": {return 2;}
+            case BEGINNER: {return 0;}
+            case INTERMEDIATE: {return 1;}
+            case ADVANCED: {return 2;}
         }
         return 100;
     }
 
     public int checkAgeRange(String ageRange) {
         switch (ageRange) {
-            case "YOUNGER THAN 10": {return -1;}
-            case "BETWEEN 11 AND 50": {return 0;}
-            case "OLDER THAN 50": {return -1;}
+            case YOUNGER_THAN_10: {return -1;}
+            case BETWEEN_11_AND_50: {return 0;}
+            case OLDER_THAN_50: {return -1;}
         }
         return 100;
     }
