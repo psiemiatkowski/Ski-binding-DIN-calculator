@@ -5,7 +5,6 @@ import java.util.Map;
 
 import static com.din.calculator.Constants.*;
 
-
 public class DinTable {
 
     private Map<Tuple, Double> dinTable = new HashMap<>();

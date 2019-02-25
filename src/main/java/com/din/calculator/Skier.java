@@ -22,6 +22,9 @@ public class Skier {
         this.shoeSizeRange = shoeSizeRange;
     }
 
+    public Skier() {
+    }
+
     public String getSkillLevel() {
         return skillLevel;
     }
