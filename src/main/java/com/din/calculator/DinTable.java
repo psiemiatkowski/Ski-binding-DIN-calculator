@@ -84,13 +84,13 @@ public class DinTable {
         dinTable.put(new Tuple(14, S_FROM_331_TO_350), 8.00);
         dinTable.put(new Tuple(15, S_FROM_331_TO_350), 9.50);
         dinTable.put(new Tuple(16, S_FROM_331_TO_350), 11.00);
-        dinTable.put(new Tuple(10, S_ABOVE_351), 3.00);
-        dinTable.put(new Tuple(11, S_ABOVE_351), 4.00);
-        dinTable.put(new Tuple(12, S_ABOVE_351), 5.00);
-        dinTable.put(new Tuple(13, S_ABOVE_351), 6.00);
-        dinTable.put(new Tuple(14, S_ABOVE_351), 7.50);
-        dinTable.put(new Tuple(15, S_ABOVE_351), 9.00);
-        dinTable.put(new Tuple(16, S_ABOVE_351), 10.50);
+        dinTable.put(new Tuple(10, S_ABOVE_350), 3.00);
+        dinTable.put(new Tuple(11, S_ABOVE_350), 4.00);
+        dinTable.put(new Tuple(12, S_ABOVE_350), 5.00);
+        dinTable.put(new Tuple(13, S_ABOVE_350), 6.00);
+        dinTable.put(new Tuple(14, S_ABOVE_350), 7.50);
+        dinTable.put(new Tuple(15, S_ABOVE_350), 9.00);
+        dinTable.put(new Tuple(16, S_ABOVE_350), 10.50);
 
         return dinTable;
     }

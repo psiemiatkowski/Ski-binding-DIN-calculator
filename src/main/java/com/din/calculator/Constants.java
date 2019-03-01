@@ -22,14 +22,14 @@ final class Constants {
     public static final String W_FROM_58_TO_66 = "FROM 58 TO 66";
     public static final String W_FROM_67_TO_78 = "FROM 67 TO 78";
     public static final String W_FROM_79_TO_94 = "FROM 79 TO 94";
-    public static final String W_ABOVE_95 = "ABOVE 95";
+    public static final String W_ABOVE_94 = "ABOVE 94";
 
     public static final String H_UP_TO_148 = "UP TO 148";
     public static final String H_FROM_149_TO_157 = "FROM 149 TO 157";
     public static final String H_FROM_158_TO_166 = "FROM 158 TO 166";
     public static final String H_FROM_167_TO_178 = "FROM 167 TO 178";
     public static final String H_FROM_179_TO_194 = "FROM 179 TO 194";
-    public static final String H_ABOVE_195 = "ABOVE 195";
+    public static final String H_ABOVE_194 = "ABOVE 194";
 
     public static final String S_UP_TO_230 = "UP TO 230";
     public static final String S_FROM_231_TO_250 = "FROM 231 TO 250";
@@ -38,5 +38,5 @@ final class Constants {
     public static final String S_FROM_291_TO_310 = "FROM 291 TO 310";
     public static final String S_FROM_311_TO_330 = "FROM 311 TO 330";
     public static final String S_FROM_331_TO_350 = "FROM 331 TO 350";
-    public static final String S_ABOVE_351 = "ABOVE 351";
+    public static final String S_ABOVE_350 = "ABOVE 350";
 }

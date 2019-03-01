@@ -12,7 +12,7 @@ public class SkierTest {
         //Given
         Skier skier1 = new Skier(BEGINNER, YOUNGER_THAN_10, W_FROM_10_TO_13, H_UP_TO_148, S_UP_TO_230);
         Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_167_TO_178, S_FROM_331_TO_350);
-        Skier skier3 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_ABOVE_95, H_ABOVE_195, S_FROM_331_TO_350);
+        Skier skier3 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_ABOVE_94, H_ABOVE_194, S_FROM_331_TO_350);
         //When
         int weightRange1 = skier1.checkWeightRange(skier1.getWeightRange());
         int weightRange2 = skier2.checkWeightRange(skier2.getWeightRange());
@@ -28,7 +28,7 @@ public class SkierTest {
         //Given
         Skier skier1 = new Skier(BEGINNER, YOUNGER_THAN_10, W_FROM_10_TO_13, H_UP_TO_148, S_UP_TO_230);
         Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_167_TO_178, S_FROM_331_TO_350);
-        Skier skier3 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_ABOVE_95, H_ABOVE_195, S_FROM_331_TO_350);
+        Skier skier3 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_ABOVE_94, H_ABOVE_194, S_FROM_331_TO_350);
         //When
         int heightRange1 = skier1.checkHeightRange(skier1.getHeightRange());
         int heightRange2 = skier2.checkHeightRange(skier2.getHeightRange());
@@ -44,7 +44,7 @@ public class SkierTest {
         //Given
         Skier skier1 = new Skier(INTERMEDIATE, BETWEEN_11_AND_50, W_FROM_18_TO_21, H_UP_TO_148, S_FROM_231_TO_250);
         Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_149_TO_157, S_FROM_251_TO_270);
-        Skier skier3 = new Skier(BEGINNER, OLDER_THAN_50, W_ABOVE_95, H_ABOVE_195, S_ABOVE_351);
+        Skier skier3 = new Skier(BEGINNER, OLDER_THAN_50, W_ABOVE_94, H_ABOVE_194, S_ABOVE_350);
         Skier skier4 = new Skier(INTERMEDIATE, YOUNGER_THAN_10, W_FROM_10_TO_13, H_UP_TO_148, S_UP_TO_230);
         //When
         int skierCode1 = skier1.calculateSkierCode();
@@ -63,7 +63,7 @@ public class SkierTest {
         //Given
         Skier skier1 = new Skier(INTERMEDIATE, BETWEEN_11_AND_50, W_FROM_18_TO_21, H_UP_TO_148, S_FROM_231_TO_250);
         Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_149_TO_157, S_FROM_251_TO_270);
-        Skier skier3 = new Skier(BEGINNER, OLDER_THAN_50, W_ABOVE_95, H_ABOVE_195, S_ABOVE_351);
+        Skier skier3 = new Skier(BEGINNER, OLDER_THAN_50, W_ABOVE_94, H_ABOVE_194, S_ABOVE_350);
         //When
         int skierSkillLevel1 = skier1.checkSkillLevel(skier1.getSkillLevel());
         int skierSkillLevel2 = skier1.checkSkillLevel(skier2.getSkillLevel());
@@ -95,7 +95,7 @@ public class SkierTest {
         //Given
         Skier skier1 = new Skier(INTERMEDIATE, BETWEEN_11_AND_50, W_FROM_79_TO_94, H_FROM_179_TO_194, S_FROM_271_TO_290);
         Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_167_TO_178, S_FROM_251_TO_270);
-        Skier skier3 = new Skier(BEGINNER, OLDER_THAN_50, W_ABOVE_95, H_ABOVE_195, S_FROM_331_TO_350);
+        Skier skier3 = new Skier(BEGINNER, OLDER_THAN_50, W_ABOVE_94, H_ABOVE_194, S_FROM_331_TO_350);
         Skier skier4 = new Skier(BEGINNER, YOUNGER_THAN_10, W_FROM_10_TO_13, H_UP_TO_148, S_UP_TO_230);
         Skier skier5 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_FROM_67_TO_78, H_FROM_179_TO_194, S_FROM_271_TO_290);
         Skier skier6 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_26_TO_30, H_UP_TO_148, S_FROM_231_TO_250);
@@ -122,7 +122,7 @@ public class SkierTest {
         Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_58_TO_66, H_FROM_149_TO_157, S_FROM_251_TO_270);
         Skier skier3 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_FROM_79_TO_94, H_FROM_179_TO_194, S_FROM_271_TO_290);
         Skier skier4 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_FROM_42_TO_48, H_FROM_149_TO_157, S_FROM_271_TO_290);
-        Skier skier5 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_ABOVE_95, H_ABOVE_195, S_ABOVE_351);
+        Skier skier5 = new Skier(INTERMEDIATE, OLDER_THAN_50, W_ABOVE_94, H_ABOVE_194, S_ABOVE_350);
         Skier skier6 = new Skier(BEGINNER, BETWEEN_11_AND_50, W_FROM_26_TO_30, H_UP_TO_148, S_FROM_311_TO_330);
         //When
         double dinResult1 = skier1.calculateDin();
@@ -144,8 +144,8 @@ public class SkierTest {
     public void shouldReturn0WhenDinResultIsBeyondTable() {
         //Given
         Skier skier1 = new Skier(BEGINNER, YOUNGER_THAN_10, W_FROM_14_TO_17, H_FROM_149_TO_157, S_FROM_331_TO_350);
-        Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_ABOVE_95, H_ABOVE_195, S_FROM_231_TO_250);
-        Skier skier3 = new Skier(INTERMEDIATE, BETWEEN_11_AND_50, W_FROM_42_TO_48, H_UP_TO_148, S_ABOVE_351);
+        Skier skier2 = new Skier(ADVANCED, BETWEEN_11_AND_50, W_ABOVE_94, H_ABOVE_194, S_FROM_231_TO_250);
+        Skier skier3 = new Skier(INTERMEDIATE, BETWEEN_11_AND_50, W_FROM_42_TO_48, H_UP_TO_148, S_ABOVE_350);
         Skier skier4 = new Skier(BEGINNER, OLDER_THAN_50, W_FROM_67_TO_78, H_FROM_179_TO_194, S_FROM_231_TO_250);
         //When
         double dinResult1 = skier1.calculateDin();

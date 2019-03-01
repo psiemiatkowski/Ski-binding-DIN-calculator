@@ -59,7 +59,7 @@ public class Skier {
             case W_FROM_58_TO_66: {return 10;}
             case W_FROM_67_TO_78: {return 11;}
             case W_FROM_79_TO_94: {return 12;}
-            case W_ABOVE_95: {return 13;}
+            case W_ABOVE_94: {return 13;}
         }
         return 100;
     }
@@ -71,7 +71,7 @@ public class Skier {
             case H_FROM_158_TO_166: {return 10;}
             case H_FROM_167_TO_178: {return 11;}
             case H_FROM_179_TO_194: {return 12;}
-            case H_ABOVE_195: {return 13;}
+            case H_ABOVE_194: {return 13;}
         }
         return 100;
     }
