@@ -11,7 +11,7 @@ public class MainController {
 
     @ResponseBody
     @RequestMapping(method = RequestMethod.POST, consumes = APPLICATION_JSON_VALUE)
-    public double getDinResult(@RequestBody Skier skier) {
+    public double calculateDinResult(@RequestBody Skier skier) {
         return skier.calculateDin();
     }
 }
